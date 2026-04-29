@@ -31,6 +31,20 @@ La base Firebase Realtime Database existe (`HTTP 200` avec corps JSON) mais les 
 | Règles de sécurité configurées | ✅ Oui |
 | Fuite de données via accès anonyme | ❌ Non |
 
-> **Livrable :** `firebase_check.md` + output `curl` dans `US8/`.
+### 8.3 Risque résiduel
+ 
+Bien que la base soit protégée, **deux informations critiques restent exposées** dans `strings.xml` :
+ 
+- L'URL exacte de la base Firebase (`firebase_database_url`)
+- La clé API Google (`google_api_key` : `AIzaSy***************************`)
+Un attaquant disposant de ces deux éléments peut :
+ 
+- Tenter une authentification Firebase avec des credentials compromis (credential stuffing)
+- Utiliser la clé API pour accéder à d'autres services Google du projet (Cloud Storage, Maps, Firebase Auth)
+- Cibler l'endpoint Firebase Auth (`/v1/accounts:signInWithPassword`) avec la clé API exposée
+
+**Recommandation :** supprimer `firebase_database_url` et `google_api_key` des ressources compilées dans l'APK. Ces valeurs doivent être récupérées dynamiquement depuis un backend ou protégées via Android Keystore.
+
+> **Livrable :** output `curl` dans `US8/`.
 
 ---
