@@ -15,7 +15,7 @@ docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:la
 # Interface disponible sur http://localhost:8000
 ```
 
-> **Livrable :** `AppSec_Scorecard.pdf` joint en annexe (`US2/AppSec_Scorecard.pdf`).
+> **Livrable :** `mobsf_report.pdf` joint en annexe (`US2/mobsf_report.pdf`).
 
 ### Résultats MobSF — Nickel 2.12.0
 
