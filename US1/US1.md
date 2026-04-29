@@ -15,3 +15,8 @@ L'APK fourni par le PO a été réceptionné et vérifié par chaque membre du g
 ```bash
 sha256sum app.apk
 ```
+
+**Résultat :**
+```
+f01f08c8b6e2fe4612e81bc7e3a3ba9440dad0d7a962f4e67640390dd721d528  app.apk
+```
