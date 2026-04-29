@@ -1,0 +1,20 @@
+ubuntu@DESKTOP-MIT8GLC:~$ apktool b app_src/ -o rebuilt.apk
+I: Using Apktool 2.7.0-dirty
+I: Checking whether sources has changed...
+I: Smaling smali folder into classes.dex...
+I: Checking whether resources has changed...
+I: Building resources...
+W: aapt: brut.common.BrutException: brut.common.BrutException: Could not extract resource: /prebuilt/linux/aapt_64 (defaulting to $PATH binary)
+W: res/drawable-v21/$avd_hide_password__0.xml: Invalid file name: must contain only [a-z0-9_.]
+W: res/drawable-v21/$avd_hide_password__1.xml: Invalid file name: must contain only [a-z0-9_.]
+W: res/drawable-v21/$avd_hide_password__2.xml: Invalid file name: must contain only [a-z0-9_.]
+W: res/drawable-v21/$avd_show_password__0.xml: Invalid file name: must contain only [a-z0-9_.]
+W: res/drawable-v21/$avd_show_password__1.xml: Invalid file name: must contain only [a-z0-9_.]
+W: res/drawable-v21/$avd_show_password__2.xml: Invalid file name: must contain only [a-z0-9_.]
+W: res/drawable-v24/$ic_launcher_foreground__0.xml: Invalid file name: must contain only [a-z0-9_.]
+brut.androlib.AndrolibException: brut.common.BrutException: could not exec (exit code = 1): [aapt, p, --min-sdk-version, 19, --target-sdk-version, 28, --version-code, 150, --version-name, 2.12.0, --no-version-vectors, -F, /tmp/APKTOOL3021249144578735249.tmp, -0, resources.arsc, -0, png, -0, res/raw/node_modules_libbusiness_languages_es_location.json, -0, res/raw/node_modules_libbusiness_languages_es_statements.json, -0, res/raw/node_modules_libbusiness_languages_fr_location.json, -0, res/raw/node_modules_libbusiness_languages_fr_statements.json, -0, res/raw/node_modules_libbusiness_languages_root_location.json, -0, res/raw/node_modules_libbusiness_languages_root_statements.json, -0, arsc, -I, /home/ubuntu/.local/share/apktool/framework/1.apk, -S, /home/ubuntu/app_src/res, -M, /home/ubuntu/app_src/AndroidManifest.xml]
+ubuntu@DESKTOP-MIT8GLC:~$ file rebuilt.apk
+rebuilt.apk: cannot open `rebuilt.apk' (No such file or directory)
+ubuntu@DESKTOP-MIT8GLC:~$ ls -lh rebuilt.apk
+ls: cannot access 'rebuilt.apk': No such file or directory
+ubuntu@DESKTOP-MIT8GLC:~$
