@@ -8,6 +8,13 @@ L'APK a été soumis à MobSF v4.5.0 via la plateforme en ligne [mobsf.live](htt
 3. Attendre la fin du scan statique
 4. Exporter le scorecard PDF via le dashboard
 
+**Pour une installation locale :**
+```bash
+docker pull opensecurity/mobile-security-framework-mobsf:latest
+docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+# Interface disponible sur http://localhost:8000
+```
+
 > **Livrable :** `AppSec_Scorecard.pdf` joint en annexe (`US2/AppSec_Scorecard.pdf`).
 
 ### Résultats MobSF — Nickel 2.12.0
